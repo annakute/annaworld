@@ -15,4 +15,6 @@ def main():
 
     proc2 = sp.check_output("ipconfig /all").decode('utf-8')
     print(proc2)
+
+    print(math.pi)
 main()
