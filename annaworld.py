@@ -10,7 +10,9 @@ def main():
     print("5^2 = " + str(5^2))
     print("5^2 is really: " + str(math.pow(5,2)))
 
-    import subprocess as sp
     proc = sp.check_output("ipconfig").decode('utf-8')
     print(proc)
+
+    proc2 = sp.check_output("ipconfig /all").decode('utf-8')
+    print(proc2)
 main()
